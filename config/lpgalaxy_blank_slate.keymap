@@ -82,7 +82,7 @@
             label = "Nav";
             bindings = <
 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp BSPC
-&kp TAB    &trans    &trans  &trans    &trans    &trans     &trans     &kp UNDS  &kp PLUS  &kp LBKT  &kp RBKT  &kp PIPE
+&kp TAB    &trans    &trans  &trans    &trans    &trans     &trans     &kp UNDER &kp PLUS  &kp LBKT  &kp RBKT  &kp PIPE
 &trans     &trans    &trans  &trans    &trans    &trans     &trans     &trans    &trans    &trans    &trans    &trans
 &trans     &trans    &trans  &trans    &trans    &trans     &trans     &to 3     &trans    &trans    &trans    &trans
             >;
