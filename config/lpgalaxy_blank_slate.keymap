@@ -84,7 +84,7 @@
 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp BSPC
 &kp TAB    &trans    &trans  &trans    &trans    &trans     &trans     &kp UNDER &kp PLUS  &kp LBKT  &kp RBKT  &kp PIPE
 &trans     &trans    &trans  &trans    &trans    &trans     &trans     &trans    &trans    &trans    &trans    &trans
-&trans     &trans    &trans  &trans    &trans    &trans     &trans     &to 3     &trans    &trans    &trans    &trans
+&kp ONEPASS     &trans    &trans  &trans    &trans    &trans     &trans     &to 3     &trans    &trans    &trans    &trans
             >;
         };
 
@@ -103,11 +103,20 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N7  &kp N8  &kp N9   &kp MINUS
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3   &kp ENTER
+&bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)	&bt BT(4)  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3   &kp ENTER
 &trans  &trans  &trans  &trans  &to 0   &trans  &trans  &to 0   &kp N0  &kp N0  &kp DOT  &trans
             >;
         };
 
 
     };
+behaviors {
+        kp_onepass: command_mod_macro {
+            compatible = "zmk,behavior-command-mod-macro";
+            label = "kp_onepass";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp BSLH>;
+            timeout-ms = <500>;
+        };
+};
 };
