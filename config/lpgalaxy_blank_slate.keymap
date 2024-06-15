@@ -35,7 +35,125 @@
                        &ortho_transform;
 #endif
     };
-    
+
+macros {
+        cad: cad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT &kp DEL>
+                , <&macro_release &kp LCTRL &kp LALT &kp DEL>
+                ;
+        };
+        new_tab: new_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp T>
+                , <&macro_release &kp LGUI &kp T>
+                ;
+        };
+        one_pass: one_pass {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp BSLH>
+                , <&macro_release &kp LGUI &kp BSLH>
+                ;
+        };
+        emoji: emoji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LCTRL &kp SPC>
+                , <&macro_release &kp LGUI &kp LCTRL &kp SPC>
+                ;
+        };
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp C>
+                , <&macro_release &kp LGUI &kp C>
+                ;
+        };
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp V>
+                , <&macro_release &kp LGUI &kp V>
+                ;
+        };
+        select_all: select_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp A>
+                , <&macro_release &kp LGUI &kp A>
+                ;
+        };
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp X>
+                , <&macro_release &kp LGUI &kp X>
+                ;
+        };
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp Z>
+                , <&macro_release &kp LGUI &kp Z>
+                ;
+        };
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "ALT_TAB";
+            bindings
+                = <&macro_press &kp LGUI &kp TAB>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LGUI &kp TAB>
+                ;
+        };
+        shft_alt_tab: shft_alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "SHFT_ALT_TAB";
+            bindings
+                = <&macro_press &kp LGUI &kp LSHFT &kp TAB>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LGUI &kp LSHFT &kp TAB>
+                ;
+        };
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LSHFT &kp N4>
+                , <&macro_release &kp LGUI &kp LSHFT &kp N4>
+                ;
+        };
+        find: find {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp F>
+                , <&macro_release &kp LGUI &kp F>
+                ;
+        };
+        spotlight: spotlight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp SPC>
+                , <&macro_release &kp LGUI &kp SPC>
+                ;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -54,9 +172,9 @@
             label = "Nav";
             bindings = <
 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp BSPC
-&kp TAB    &trans    &trans  &trans    &trans    &trans     &trans     &kp UNDER &kp PLUS  &kp LBKT  &kp RBKT  &kp PIPE
-&trans     &trans    &trans  &trans    &trans    &trans     &trans     &trans    &trans    &trans    &trans    &trans
-&trans     &trans    &trans  &trans    &trans    &trans     &to 3     &trans    &trans    &trans    &trans
+&kp TAB    &trans    &trans  &alt_tab    &shft_alt_tab    &trans     &trans     &kp UNDER &kp PLUS  &kp LBKT  &kp RBKT  &kp PIPE
+&trans     &trans    &undo  &select_all    &cut    &copy     &paste     &trans    &trans    &trans    &trans    &trans
+&one_pass     &trans    &trans  &new_tab    &trans    &spotlight     &to 3     &trans    &trans    &trans    &trans
             >;
         };
 
@@ -66,7 +184,7 @@
 &kp MINUS  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7     &kp N8   &kp N9    &kp N0    &kp PLUS
 &kp DEL    &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQL  &kp LBKT  &kp RBKT  &kp BSLH
 &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &kp DOT   &trans    &trans
-&trans     &trans  &trans  &trans  &to 3   &trans  &trans     &trans   &trans    &trans    &trans
+&trans     &trans  &trans  &trans  &to 3   &emoji  &trans     &screenshot   &trans    &trans    &trans
             >;
         };
 
