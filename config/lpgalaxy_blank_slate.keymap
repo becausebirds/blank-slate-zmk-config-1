@@ -311,6 +311,7 @@ behaviors {
 };
 bt_selected {
             bindings = 
+            <
                 &bt_sel BT_SEL 0 (
                     QWERTY LOWER RAISE NUMBERS
                 ),
