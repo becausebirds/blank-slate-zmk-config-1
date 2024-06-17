@@ -314,7 +314,7 @@ bt_selected {
             <
                 &bt_sel BT_SEL 0 (
                     QWERTY LOWER RAISE NUMBERS
-                ),
+                );
                 &bt_sel BT_SEL 1 (
                     WINDOWS WINDOWS_LOWER WINDOWS_RAISE NUMBERS
                 );
