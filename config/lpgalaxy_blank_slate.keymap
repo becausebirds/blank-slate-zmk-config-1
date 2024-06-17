@@ -316,7 +316,7 @@ bt_selected {
                 ),
                 &bt_sel BT_SEL 1 (
                     WINDOWS WINDOWS_LOWER WINDOWS_RAISE NUMBERS
-                )
+                );
             >;
         };
 };
