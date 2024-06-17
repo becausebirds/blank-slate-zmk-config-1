@@ -309,15 +309,15 @@ behaviors {
            bindings = <&kp RSHFT>, <&kp ENTER>;
        };
 };
-bt_selected {
+ bt_selected {
             bindings = 
-            <
                 &bt_sel BT_SEL 0 (
-                    QWERTY LOWER RAISE NUMBERS
-                );
+                    _QWERTY_LAYER _LOWER_LAYER _RAISE_LAYER _NUMBERS_LAYER
+                )
                 &bt_sel BT_SEL 1 (
-                    WINDOWS WINDOWS_LOWER WINDOWS_RAISE NUMBERS
-                );
+                    _WINDOWS_QWERTY_LAYER _WINDOWS_LOWER_LAYER _WINDOWS_RAISE_LAYER _WINDOWS_NUMBERS_LAYER
+                )
             >;
         };
+    };
 };
