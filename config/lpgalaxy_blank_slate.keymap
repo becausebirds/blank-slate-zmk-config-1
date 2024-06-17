@@ -310,14 +310,14 @@ behaviors {
        };
 };
  bt_selected {
-            bindings = 
-                &bt_sel BT_SEL 0 (
-                    _QWERTY_LAYER _LOWER_LAYER _RAISE_LAYER _NUMBERS_LAYER
-                )
-                &bt_sel BT_SEL 1 (
-                    _WINDOWS_QWERTY_LAYER _WINDOWS_LOWER_LAYER _WINDOWS_RAISE_LAYER _WINDOWS_NUMBERS_LAYER
-                )
-            >;
-        };
+    bindings = 
+        &bt_sel BT_SEL 0 (
+            "QWERTY_layer" "LOWER_layer" "RAISE_layer" "NUMBERS_layer"
+        )
+        &bt_sel BT_SEL 1 (
+            "windows_layer" "windows_lower_layer" "windows_raise_layer" "NUMBERS_layer"
+        )
+    >;
+};
     };
 };
