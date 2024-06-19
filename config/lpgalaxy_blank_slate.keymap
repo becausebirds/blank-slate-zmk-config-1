@@ -14,11 +14,11 @@
 #define RAISE        2
 #define NUMBERS      3
 
-#define TBLE_MIT     1
+#define WINDOWS 0
+#define WINDOWS_LOWER        1
+#define WINDOWS_RAISE        2
 
-#define NAV_L 1
-#define NUM_L 2
-#define SYM_L 3
+#define TBLE_MIT     1
 
 &lt { quick_tap_ms = <200>; };
 
@@ -29,7 +29,16 @@
       zmk,matrix_transform = &mit_transform;
    };
 
-macros {
+bt_selected {
+    bindings = 
+        &bt_sel BT_SEL 0 (
+            "QWERTY_layer" "LOWER_layer" "RAISE_layer" "NUMBERS_layer"
+        )
+        &bt_sel BT_SEL 1 (
+            "WINDOWS" "WINDOWS_LOWER" "WINDOWS_RAISE" "NUMBERS_layer"
+        )
+    >;
+};macros {
        // macOS macros
        cad: cad {
            compatible = "zmk,behavior-macro";
