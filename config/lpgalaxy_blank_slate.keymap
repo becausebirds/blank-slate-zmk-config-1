@@ -31,6 +31,7 @@
 
 bt_selected {
     bindings = 
+      <
         &bt_sel BT_SEL 0 (
             "QWERTY_layer" "LOWER_layer" "RAISE_layer" "NUMBERS_layer"
         )
