@@ -28,8 +28,8 @@
    chosen {
       zmk,matrix_transform = &mit_transform;
    };
-};
-macros {
+
+    macros {
        // macOS macros
        cad: cad {
            compatible = "zmk,behavior-macro";
@@ -65,7 +65,7 @@ macros {
                , <&macro_release &kp LGUI &kp T>
                ;
        };
-one_pass: one_pass {
+        one_pass: one_pass {
            compatible = "zmk,behavior-macro";
            #binding-cells = <0>;
            bindings
@@ -105,7 +105,7 @@ one_pass: one_pass {
                , <&macro_release &kp LGUI &kp A>
                ;
        };
-cut: cut {
+    cut: cut {
            compatible = "zmk,behavior-macro";
            #binding-cells = <0>;
            bindings
