@@ -36,7 +36,7 @@ macros {
            #binding-cells = <0>;
            bindings
                = <&macro_press &kp LCTRL &kp LALT &kp>
-               , <&kd DEL>
+               , <&kp DEL>
                , <&macro_release &kp LCTRL &kp LALT &kp DEL>
                , <&to 0>
                ;
