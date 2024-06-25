@@ -30,26 +30,16 @@
    chosen {
       zmk,matrix_transform = &mit_transform;
    };
-
-bt_selected {
-    bindings = 
-      <
-        &bt_sel Mode (
-            "QWERTY_layer" "LOWER_layer" "RAISE_layer" "NUMBERS_layer"
-        )
-        &bt_sel BT_SEL 1 (
-            "WINDOWS" "WINDOWS_LOWER" "WINDOWS_RAISE" "NUMBERS_layer"
-        )
-    >;
 };macros {
        // macOS macros
        cad: cad {
            compatible = "zmk,behavior-macro";
            #binding-cells = <0>;
            bindings
-               = <&macro_press &kp LCTRL &kp LALT &kp DEL>
+               = <&macro_press &kp LCTRL &kp LALT &kp>
+               , <&kd DEL>
                , <&macro_release &kp LCTRL &kp LALT &kp DEL>
-               , <&macro_tap &to 0>
+               , <&to 0>
                ;
        };
        mac_mode: mac_mode {
@@ -190,7 +180,8 @@ find: find {
            compatible = "zmk,behavior-macro";
            #binding-cells = <0>;
            bindings
-               = <&macro_tap &kp LCTRL &kp C>
+               = <&macro_press &kp LCTRL &kp C>
+               , <&macro_release &kp LCTRL &kp C>
                ;
        };
        paste_win: paste_win {
@@ -256,9 +247,9 @@ find: find {
            #binding-cells = <0>;
            label = "SHFT_ALT_TAB_WIN";
            bindings
-               = <&macro_press &kp LALT &kp LSHFT &kp TAB>
+               = <&macro_press &kp LALT &kp LSHFT>
                , <&macro_tap &kp TAB>
-               , <&macro_release &kp LALT &kp LSHFT &kp TAB>
+               , <&macro_release &kp LALT &kp LSHFT>
                ;
        };
        screenshot_win: screenshot_win {
