@@ -35,7 +35,7 @@
            compatible = "zmk,behavior-macro";
            #binding-cells = <0>;
            bindings
-               = <&macro_press &kp LCTRL &kp LALT &kp>
+               = <&macro_press &kp LCTRL &kp LALT>
                , <&kp DEL>
                , <&macro_release &kp LCTRL &kp LALT &kp DEL>
                , <&to 0>
