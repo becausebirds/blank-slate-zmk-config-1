@@ -318,7 +318,7 @@ NUMBERS_layer {
             <
 &cad  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp N7  &kp N8  &kp N9   &kp MINUS
 &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp N4  &kp N5  &kp N6   &kp NO
-&mac_mode  &pc_mode  &bt BT_SEL(2)   &bt BT_SEL(3) &bt BT_SEL(4)  &kp NO  &kp NO  &kp NO  &kp N1  &kp N2  &kp N3   &kp ENTER
+&mac_mode  &pc_mode  &bt BT_SEL 2   &bt BT_SEL 3 &bt BT_SEL 4   &kp NO  &kp NO  &kp NO  &kp N1  &kp N2  &kp N3   &kp ENTER
 &bt BT_CLR  &bt BT_CLR_ALL  &kp NO  &kp NO  &to 0   &kp NO  &to 0   &kp N0  &kp N0  &kp DOT  &kp NO
            >;
        };
@@ -361,7 +361,7 @@ windows_numbers_layer {
             <
 &cad  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp N7  &kp N8  &kp N9   &kp MINUS
 &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp NO  &kp N4  &kp N5  &kp N6   &kp NO
-&mac_mode  &pc_mode  &bt BT_SEL(2)   &bt BT_SEL(3) &bt BT_SEL(4)  &kp NO  &kp NO  &kp NO  &kp N1  &kp N2  &kp N3   &kp ENTER
+&mac_mode  &pc_mode  &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4   &kp NO  &kp NO  &kp NO  &kp N1  &kp N2  &kp N3   &kp ENTER
 &bt BT_CLR  &bt BT_CLR_ALL  &kp NO  &kp NO  &to 4   &kp NO  &to 4   &kp N0  &kp N0  &kp DOT  &kp NO
            >;
        };
