@@ -346,19 +346,19 @@
            bindings = <
 /*
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐
- * │   │   │   │   │   │   │   │ 7 │ 8 │ 9 │ - │   │
+ * │   │   │   │   │   │   │   │   │ 7 │ 8 │ 9 │ - │
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
- * │   │   │   │   │   │   │   │ 4 │ 5 │ 6 │ + │   │
+ * │   │   │   │   │   │   │   │   │ 4 │ 5 │ 6 │ + │
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
- * │MAC│PC │BT2│BT3│BT4│   │   │ 1 │ 2 │ 3 │ENT│   │
+ * │MAC│PC │BT2│BT3│BT4│   │   │   │ 1 │ 2 │ 3 │ENT│
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
- * │CLR│CLA│   │   │QWE│  SPC  │QWE│ 0 │ . │   │   │
+ * │CLR│CLA│   │   │QWE│  SPC  │QWE│ 0 │ 0 │ . │   │
  * └───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
  */
-&none      &none     &none     &none      &none    &none     &none    &kp N7    &kp N8    &kp N9   &kp MINUS &none
-&none      &none     &none     &none      &none    &none     &none    &kp N4    &kp N5    &kp N6   &kp PLUS  &none
-&mac_mode  &pc_mode  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &kp N1  &kp N2    &kp N3   &kp ENTER &none
-&bt BT_CLR &bt BT_CLR_ALL &none &none &to QWERTY &kp SPACE  &to QWERTY &kp N0   &kp DOT   &none    &none
+&none      &none     &none     &none      &none    &none     &none    &none     &kp N7    &kp N8   &kp N9    &kp MINUS
+&none      &none     &none     &none      &none    &none     &none    &none     &kp N4    &kp N5   &kp N6    &kp PLUS
+&mac_mode  &pc_mode  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none   &kp N1    &kp N2   &kp N3    &kp ENTER
+&bt BT_CLR &bt BT_CLR_ALL &none &none &to QWERTY &kp SPACE  &to QWERTY &kp N0   &kp NO   &kp DOT    &none
            >;
        };
    
@@ -430,19 +430,19 @@
            bindings = <
 /*
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐
- * │CAD│   │   │   │   │   │   │ 7 │ 8 │ 9 │ - │   │
+ * │CAD│   │   │   │   │   │   │   │ 7 │ 8 │ 9 │ - │
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
- * │   │   │   │   │   │   │   │ 4 │ 5 │ 6 │ + │   │
+ * │   │   │   │   │   │   │   │   │ 4 │ 5 │ 6 │ + │
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
- * │MAC│PC │BT2│BT3│BT4│   │   │ 1 │ 2 │ 3 │ENT│   │
+ * │MAC│PC │BT2│BT3│BT4│   │   │   │ 1 │ 2 │ 3 │ENT│
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
  * │CLR│CLA│   │   │WIN│  SPC  │WIN│ 0 │ . │   │   │
  * └───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
  */
-&cad       &none     &none     &none      &none    &none     &none    &kp N7    &kp N8    &kp N9   &kp MINUS &none
-&none      &none     &none     &none      &none    &none     &none    &kp N4    &kp N5    &kp N6   &kp PLUS  &none
-&mac_mode  &pc_mode  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &kp N1  &kp N2    &kp N3   &kp ENTER &none
-&bt BT_CLR &bt BT_CLR_ALL &none &none &to WINDOWS &kp SPACE &to WINDOWS &kp N0  &kp DOT   &none    &none
+&cad       &none     &none     &none      &none    &none     &none    &none     &kp N7    &kp N8   &kp N9    &kp MINUS
+&none      &none     &none     &none      &none    &none     &none    &none     &kp N4    &kp N5   &kp N6    &kp PLUS
+&mac_mode  &pc_mode  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none   &kp N1    &kp N2   &kp N3    &kp ENTER
+&bt BT_CLR &bt BT_CLR_ALL &none &none &to WINDOWS &kp SPACE &to WINDOWS &kp N0  &kp NO   &kp DOT    &none
            >;
        };
    };
