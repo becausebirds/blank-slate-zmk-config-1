@@ -170,8 +170,8 @@
            compatible = "zmk,behavior-macro";
            #binding-cells = <0>;
            bindings
-               = <&macro_press &kp LCTRL &kp N>
-               , <&macro_release &kp LCTRL &kp N>
+               = <&macro_press &kp LCTRL &kp T>
+               , <&macro_release &kp LCTRL &kp T>
                ;
        };
        copy_win: copy_win {
@@ -356,8 +356,8 @@
  * └───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
  */
 &none      &none     &none     &none      &none    &none     &none    &none     &kp N7    &kp N8   &kp N9    &kp MINUS
-&none      &none     &bt BT_SEL 0     &none      &none    &none     &none    &none     &kp N4    &kp N5   &kp N6    &kp PLUS
-&mac_mode  &pc_mode  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none   &kp N1    &kp N2   &kp N3    &kp ENTER
+&bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4    &none     &none    &none     &kp N4    &kp N5   &kp N6    &kp PLUS
+&mac_mode  &pc_mode  &none &none &none &none &none &none   &kp N1    &kp N2   &kp N3    &kp ENTER
 &bt BT_CLR &bt BT_CLR_ALL &none &none &to QWERTY &kp SPACE  &to QWERTY &kp N0   &kp N0   &kp DOT    &none
            >;
        };
