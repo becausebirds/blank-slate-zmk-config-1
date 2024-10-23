@@ -289,7 +289,7 @@
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
  * │SFT│ Z │ X │ C │ V │ B │ N │ M │ , │ . │ / │SFT│
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
- * │GUI│ALT│CTL│LWR│  SPC  │RSE│LFT│DWN│UP │RGT│
+ * │GUI│CTL|ALT│CTL│LWR│  SPC  │RSE│LFT│DWN│UP │RGT│
  * └───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
  */
 &kp ESC    &kp Q     &kp W     &kp E      &kp R    &kp T      &kp Y    &kp U    &kp I     &kp O    &kp P     &kp BSPC
@@ -348,17 +348,17 @@
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐
  * │   │   │   │   │   │   │   │   │ 7 │ 8 │ 9 │ - │
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
- * │   │   │   │   │   │   │   │   │ 4 │ 5 │ 6 │ + │
+ * │BT0│BT1│   │   │   │   │   │   │ 4 │ 5 │ 6 │ + │
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
  * │MAC│PC │BT2│BT3│BT4│   │   │   │ 1 │ 2 │ 3 │ENT│
  * ├───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
- * │CLR│CLA│   │   │QWE│  SPC  │QWE│ 0 │ 0 │ . │   │
+ * │CLR│   │   │   │QWE│  SPC  │QWE│ 0 │ 0 │ . │   │
  * └───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
  */
 &none      &none     &none     &none      &none    &none     &none    &none     &kp N7    &kp N8   &kp N9    &kp MINUS
 &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4    &none     &none    &none     &kp N4    &kp N5   &kp N6    &kp PLUS
 &mac_mode  &pc_mode  &none &none &none &none &none &none   &kp N1    &kp N2   &kp N3    &kp ENTER
-&bt BT_CLR &bt BT_CLR_ALL &none &none &to QWERTY &kp SPACE  &to QWERTY &kp N0   &kp N0   &kp DOT    &none
+&bt BT_CLR &none &none &none &to QWERTY &kp SPACE  &to QWERTY &kp N0   &kp N0   &kp DOT    &none
            >;
        };
    
